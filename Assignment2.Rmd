@@ -1,0 +1,27 @@
+---
+title: "Assignment_2"
+author: "Munisa"
+date: "2026-03-23"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r airquality}
+
+head(airquality)
+good<-complete.cases(airquality)
+good[1:6]
+airquality_cleaned<-airquality[good,]
+head(airquality_cleaned)
+
+
+```
+## Cleaning dataset airquality from NA values
+
+*_airquality_* dataset is used to complete assignment.
+Using _complete_cases_ complete rows were identified and cleaned new dataset *_airquality_cleaned_* was created that doesnt contain missing values
+
+
